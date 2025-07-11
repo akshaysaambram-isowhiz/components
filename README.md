@@ -8,7 +8,7 @@ This project was created with [Better-T-Stack](https://github.com/AmanVarshney01
 - **Next.js** - Full-stack React framework
 - **TailwindCSS** - Utility-first CSS for rapid UI development
 - **shadcn/ui** - Reusable UI components
-- **Biome** - Linting and formatting
+- **Prettier** -Formatting
 - **Husky** - Git hooks for code quality
 - **Turborepo** - Optimized monorepo build system
 
@@ -20,7 +20,6 @@ First, install the dependencies:
 bun install
 ```
 
-
 Then, run the development server:
 
 ```bash
@@ -28,8 +27,6 @@ bun dev
 ```
 
 Open [http://localhost:3001](http://localhost:3001) in your browser to see the web application.
-
-
 
 ## Project Structure
 
@@ -45,4 +42,3 @@ components/
 - `bun build`: Build all applications
 - `bun dev:web`: Start only the web application
 - `bun check-types`: Check TypeScript types across all apps
-- `bun check`: Run Biome formatting and linting
