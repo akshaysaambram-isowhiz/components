@@ -1,8 +1,8 @@
+import Providers from "@/components/providers";
+import Sidebar from "@/components/sidebar";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "../index.css";
-import Providers from "@/components/providers";
-import Header from "@/components/header";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "components",
+  title: "Components",
   description: "components",
 };
 
@@ -30,9 +30,9 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Providers>
-          <div className="grid h-svh grid-rows-[auto_1fr]">
-            <Header />
-            {children}
+          <div className="grid h-screen grid-cols-[1fr_4fr]">
+            <Sidebar />
+            <div className="overflow-hidden">{children}</div>
           </div>
         </Providers>
       </body>
